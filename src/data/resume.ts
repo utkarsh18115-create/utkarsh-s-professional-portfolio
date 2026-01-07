@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Utkarsh Sarvjeet Tiwari",
   headline: "Electronics & CS student building intelligent systems with Python, AI/ML, and IoT",
-  email: "utkarshtiwari@example.com", // Update with actual email
-  linkedin: "https://linkedin.com/in/utkarshtiwari", // Update with actual
-  github: "https://github.com/utkarshtiwari", // Update with actual
+  email: "utkarshtiwari4412@gmail.com", // Update with actual email
+  linkedin: "https://www.linkedin.com/in/utkarsh-tiwari-45813728b/", // Update with actual
+  github: "https://github.com/Utkarsh4412", // Update with actual
 };
 
 export const about = `I'm a third-year Electronics and Computer Science student at Shah and Anchor Kutchhi Engineering College, Mumbai. My work sits at the intersection of software development and intelligent systems.
@@ -42,7 +42,7 @@ export const projects = [
     description:
       "A Windows-first voice chat application using local AI models (Gemma 3 via Ollama) with real-time speech-to-text and text-to-speech pipeline. Features conversational memory, retry logic, performance metrics, and configurable CLI with multiple deployment modes.",
     tech: ["Python", "Ollama", "Gradio", "WebRTC", "YAML"],
-    github: "https://github.com",
+    github: "https://github.com/Utkarsh4412/Local-Voice-AI-Agent",
   },
   {
     title: "Artha Mart",
@@ -51,7 +51,7 @@ export const projects = [
     description:
       "A group-based e-commerce platform with user authentication, product management, cart operations, and order processing. Designed the MySQL database schema and built secure backend logic in Flask.",
     tech: ["Flask", "MySQL", "Python", "HTML", "CSS"],
-    github: "https://github.com",
+    github: "https://github.com/Utkarsh4412",
   },
   {
     title: "Harry Potter Invisibility Cloak",
@@ -59,7 +59,7 @@ export const projects = [
     description:
       "Computer vision project simulating the invisibility effect using color detection and HSV masking in real-time video. Includes real-time trackbar tuning for color calibration.",
     tech: ["OpenCV", "Python", "NumPy"],
-    github: "https://github.com",
+    github: "https://github.com/Utkarsh4412",
   },
   {
     title: "Smart Home Automation System",
@@ -67,7 +67,7 @@ export const projects = [
     description:
       "C++ project simulating smart home automation with device control, temperature monitoring, energy usage calculation, and state persistence to file.",
     tech: ["C++", "File I/O"],
-    github: "https://github.com",
+    github: "https://github.com/Utkarsh4412",
   },
 ];
 
