@@ -20,7 +20,7 @@ const Header = () => {
           href="#" 
           className="font-mono text-sm font-medium text-heading hover:text-primary transition-colors"
         >
-          ut.
+          Home
         </a>
         
         <ul className="hidden md:flex items-center gap-8">
