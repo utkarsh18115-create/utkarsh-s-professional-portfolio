@@ -4,6 +4,7 @@ export const personalInfo = {
   email: "utkarshtiwari4412@gmail.com", // Update with actual email
   linkedin: "https://www.linkedin.com/in/utkarsh-tiwari-45813728b/", // Update with actual
   github: "https://github.com/Utkarsh4412", // Update with actual
+  resumePdf: "/Utkarsh_Tiwari_Resume.pdf",
 };
 
 export const about = `I'm a third-year Electronics and Computer Science student at Shah and Anchor Kutchhi Engineering College, Mumbai. My work sits at the intersection of software development and intelligent systems.
@@ -14,14 +15,28 @@ Currently seeking AI/ML and software development roles where I can contribute to
 
 export const experience = [
   {
+    role: "Research Intern (AI/ML)",
+    company: "NLIP Lab, IIT Hyderabad",
+    duration: "February 2026 – Present",
+    type: "Research internship",
+    responsibilities: [
+      "Contributing to development of an AI-based product/system",
+      "Building data pipelines and preprocessing workflows for real-world datasets",
+      "Performing model evaluation and optimization to improve accuracy and response time",
+      "Collaborating with research scholars and faculty on system architecture and experimentation",
+    ],
+  },
+  {
     role: "AI/ML Intern",
     company: "Aryahs World Infotech (OPC) Pvt. Ltd.",
-    duration: "December 2025 – June 2026",
-    type: "6-month internship",
+    duration: "December 2025 – January 2026",
+    type: "Internship",
     responsibilities: [
-      "Working on Python-based AI/ML experimentation and model development",
-      "Contributing to NLP and data-driven model implementations",
-      "Assisting in intelligent system development and project-oriented tasks",
+      "Developed WhatsApp automation system for customer interaction and workflow management",
+      "Built ML-based symptom classifier mapping user inputs to probable medical conditions",
+      "Implemented automated email generation system for context-aware communication",
+      "Contributed to full-stack product features using Python, Flask, MySQL & JavaScript",
+      "Worked with real-time datasets, testing, and Agile sprint collaboration",
     ],
   },
 ];
@@ -32,7 +47,7 @@ export const projects = [
     subtitle: "Industry-Defined Problem by Cybranex Pvt. Ltd.",
     status: "Ongoing",
     description:
-      "Designing and training quantum autoencoder models for data compression and feature extraction. Simulating quantum circuits and exploring hybrid quantum–classical architectures for dimensionality reduction.",
+      "Designed and trained quantum autoencoder models for data compression and feature extraction as part of an industry-defined research problem under faculty mentorship. Simulating quantum circuits and exploring hybrid quantum–classical architectures for dimensionality reduction. Conducting research and documentation under faculty mentorship as part of a college–industry collaboration program.",
     tech: ["Qiskit", "Python", "NumPy", "Matplotlib"],
     github: null,
   },
@@ -92,7 +107,7 @@ export const skills = {
 export const education = {
   institution: "Shah and Anchor Kutchhi Engineering College",
   degree: "B.Tech in Electronics and Computer Science Engineering",
-  year: "Third Year, Semester 5",
+  year: "Third Year, Semester 6",
   graduation: "2027",
   duration: "Sept 2023 – Present",
   location: "Mumbai, Maharashtra",
@@ -108,11 +123,6 @@ export const certifications = [
     title: "Embedded System Developer",
     issuer: "AICTE Virtual Internship (Eduskills Foundation)",
     description: "Microcontrollers, sensor interfacing, and Embedded C programming",
-  },
-  {
-    title: "Google AI-ML Virtual Internship",
-    issuer: "Google",
-    description: "Ongoing",
   },
 ];
 

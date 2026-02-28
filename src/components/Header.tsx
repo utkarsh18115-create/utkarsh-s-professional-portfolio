@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { personalInfo } from "@/data/resume";
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -38,7 +39,7 @@ const Header = () => {
         </ul>
 
         <a
-          href="/resume.pdf"
+          href={personalInfo.resumePdf}
           target="_blank"
           rel="noopener noreferrer"
           className="font-mono text-xs px-4 py-2 border border-primary text-primary rounded hover:bg-primary/5 transition-colors"

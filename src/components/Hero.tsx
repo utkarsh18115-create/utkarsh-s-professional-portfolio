@@ -57,7 +57,7 @@ const Hero = () => {
             <ArrowRight size={16} />
           </a>
           <a
-            href="/resume.pdf"
+            href={personalInfo.resumePdf}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-border text-heading font-medium rounded hover:border-primary hover:text-primary transition-colors"
