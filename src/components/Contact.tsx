@@ -2,10 +2,6 @@ import { motion } from "framer-motion";
 import { personalInfo } from "@/data/resume";
 import { Mail, Linkedin, Github, Send } from "lucide-react";
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
-
-// Initialize EmailJS
-emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -22,22 +18,29 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        {
-          to_email: "utkarshtiwari4412@gmail.com",
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
           message: formData.message,
-        }
-      );
-      
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setSubmitStatus(null), 5000);
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        throw new Error(data.error || "Failed to send message");
+      }
     } catch (error) {
-      console.error("Email send failed:", error);
+      console.error("Form submission failed:", error);
       setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(null), 5000);
     } finally {
