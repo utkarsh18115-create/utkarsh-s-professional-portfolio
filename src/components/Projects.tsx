@@ -3,10 +3,6 @@ import { projects } from "@/data/resume";
 import { ExternalLink, Github, Folder } from "lucide-react";
 
 const Projects = () => {
-  // Featured projects (first 3)
-  const featured = projects.slice(0, 3);
-  const other = projects.slice(3);
-
   return (
     <section id="projects" className="py-24">
       <div className="section-container">
@@ -22,26 +18,12 @@ const Projects = () => {
             <span className="h-px bg-border flex-1 max-w-xs" />
           </h2>
 
-          {/* Featured Projects */}
-          <div className="space-y-24 mb-20">
-            {featured.map((project, index) => (
+          {/* All Projects in Featured Style */}
+          <div className="space-y-24">
+            {projects.map((project, index) => (
               <FeaturedProject key={index} project={project} index={index} />
             ))}
           </div>
-
-          {/* Other Projects */}
-          {other.length > 0 && (
-            <div>
-              <h3 className="text-center text-lg font-medium text-heading mb-8">
-                Other Notable Projects
-              </h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                {other.map((project, index) => (
-                  <OtherProject key={index} project={project} index={index} />
-                ))}
-              </div>
-            </div>
-          )}
         </motion.div>
       </div>
     </section>
