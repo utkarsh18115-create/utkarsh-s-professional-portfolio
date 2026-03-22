@@ -31,10 +31,15 @@ const Education = () => {
                   {education.institution}
                 </h4>
                 <p className="text-body text-sm mb-2">{education.degree}</p>
-                <p className="font-mono text-xs text-subtle">
-                  {education.year} · Expected {education.graduation}
-                </p>
-                <p className="text-xs text-subtle mt-1">{education.location}</p>
+                <div className="space-y-1">
+                  <p className="font-mono text-xs text-subtle">
+                    {education.duration} · {education.graduation}
+                  </p>
+                  <p className="font-mono text-xs text-primary font-medium">
+                    CGPA: {education.cgpa}
+                  </p>
+                  <p className="text-xs text-subtle">{education.location}</p>
+                </div>
               </div>
             </div>
 

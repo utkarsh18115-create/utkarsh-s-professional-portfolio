@@ -69,14 +69,14 @@ const Contact = () => {
           </p>
 
           {/* Contact Links */}
-          <div className="flex justify-center gap-6 mb-12">
+          <div className="flex flex-wrap justify-center gap-6 mb-12">
             <a
               href={`mailto:${personalInfo.email}`}
               className="flex items-center gap-2 text-subtle hover:text-heading transition-colors"
               aria-label="Email"
             >
-              <Mail size={20} />
-              <span className="text-sm">Email</span>
+              <Mail size={18} />
+              <span className="text-sm font-mono">{personalInfo.email}</span>
             </a>
             <a
               href={personalInfo.linkedin}
@@ -85,8 +85,8 @@ const Contact = () => {
               className="flex items-center gap-2 text-subtle hover:text-heading transition-colors"
               aria-label="LinkedIn"
             >
-              <Linkedin size={20} />
-              <span className="text-sm">LinkedIn</span>
+              <Linkedin size={18} />
+              <span className="text-sm font-mono">LinkedIn</span>
             </a>
             <a
               href={personalInfo.github}
@@ -95,9 +95,20 @@ const Contact = () => {
               className="flex items-center gap-2 text-subtle hover:text-heading transition-colors"
               aria-label="GitHub"
             >
-              <Github size={20} />
-              <span className="text-sm">GitHub</span>
+              <Github size={18} />
+              <span className="text-sm font-mono">GitHub</span>
             </a>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6 mb-12 text-subtle text-xs font-mono">
+            <p className="flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-accent" />
+              {personalInfo.phone}
+            </p>
+            <p className="flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-accent" />
+              {personalInfo.location}
+            </p>
           </div>
 
           {/* Contact Form */}

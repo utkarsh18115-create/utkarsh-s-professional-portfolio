@@ -6,7 +6,7 @@ const skillGroups = [
   { title: "AI & Machine Learning", items: skills.aiMl },
   { title: "Data & Visualization", items: skills.dataViz },
   { title: "Web & Frameworks", items: skills.webFrameworks },
-  { title: "Databases & Tools", items: skills.databases },
+  { title: "Databases & Tools", items: skills.databasesTools },
   { title: "Quantum (Basics)", items: skills.quantum },
 ];
 

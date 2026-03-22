@@ -34,9 +34,15 @@ const Experience = () => {
                     {exp.role}{" "}
                     <span className="text-primary">@ {exp.company}</span>
                   </h3>
-                  <p className="font-mono text-sm text-subtle">
-                    {exp.duration} · {exp.type}
-                  </p>
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+                    <p className="font-mono text-xs text-subtle">
+                      {exp.duration} · {exp.type}
+                    </p>
+                    <span className="hidden md:inline w-1 h-1 rounded-full bg-border" />
+                    <p className="font-mono text-xs text-subtle">
+                      {exp.location}
+                    </p>
+                  </div>
                 </div>
 
                 <ul className="space-y-2">

@@ -1,10 +1,12 @@
 export const personalInfo = {
   name: "Utkarsh Sarvjeet Tiwari",
   headline: "Electronics & CS student building intelligent systems with Python, AI/ML, and IoT",
-  email: "utkarshtiwari4412@gmail.com", // Update with actual email
-  linkedin: "https://www.linkedin.com/in/utkarsh-tiwari-45813728b/", // Update with actual
-  github: "https://github.com/Utkarsh4412", // Update with actual
-  resumePdf: "/Utkarsh_Tiwari_Resume.pdf",
+  email: "utkarshtiwari4412@gmail.com",
+  phone: "+91 9082381573",
+  location: "Panvel, Navi Mumbai, India",
+  linkedin: "https://www.linkedin.com/in/utkarsh-tiwari-45813728b/",
+  github: "https://github.com/Utkarsh4412",
+  resumePdf: "/CV_Utkarsh_Tiwari.pdf",
 };
 
 export const about = `I'm a third-year Electronics and Computer Science student at Shah and Anchor Kutchhi Engineering College, Mumbai. My work sits at the intersection of software development and intelligent systems.
@@ -17,6 +19,7 @@ export const experience = [
   {
     role: "Research Intern (AI/ML)",
     company: "NLIP Lab, IIT Hyderabad",
+    location: "Sangareddy, India",
     duration: "February 2026 – Present",
     type: "Research internship",
     responsibilities: [
@@ -29,6 +32,7 @@ export const experience = [
   {
     role: "AI/ML Intern",
     company: "Aryahs World Infotech (OPC) Pvt. Ltd.",
+    location: "Navi Mumbai, Maharashtra",
     duration: "December 2025 – January 2026",
     type: "Internship",
     responsibilities: [
@@ -39,18 +43,21 @@ export const experience = [
       "Worked with real-time datasets, testing, and Agile sprint collaboration",
     ],
   },
+  {
+    role: "Quantum Computing Researcher",
+    company: "Cybranex Pvt. Ltd.",
+    location: "Remote",
+    duration: "October 2024 – Present",
+    type: "Industry-Defined Research",
+    responsibilities: [
+      "Designing and training quantum autoencoder models for data compression and feature extraction",
+      "Simulating quantum circuits and exploring hybrid quantum–classical architectures for dimensionality reduction",
+      "Conducting research and documentation as part of a college–industry collaboration program",
+    ],
+  },
 ];
 
 export const projects = [
-  {
-    title: "Quantum Computing Research Project",
-    subtitle: "Industry-Defined Problem by Cybranex Pvt. Ltd.",
-    status: "Ongoing",
-    description:
-      "Designed and trained quantum autoencoder models for data compression and feature extraction as part of an industry-defined research problem under faculty mentorship. Simulating quantum circuits and exploring hybrid quantum–classical architectures for dimensionality reduction. Conducting research and documentation under faculty mentorship as part of a college–industry collaboration program.",
-    tech: ["Qiskit", "Python", "NumPy", "Matplotlib"],
-    github: null,
-  },
   {
     title: "Local Voice AI Agent",
     date: "August 2025",
@@ -65,7 +72,7 @@ export const projects = [
     date: "June 2025",
     description:
       "A group-based e-commerce platform with user authentication, product management, cart operations, and order processing. Designed the MySQL database schema and built secure backend logic in Flask.",
-    tech: ["Flask", "MySQL", "Python", "HTML", "CSS"],
+    tech: ["Flask", "MySQL", "Python", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/Utkarsh4412",
   },
   {
@@ -87,7 +94,7 @@ export const projects = [
 ];
 
 export const skills = {
-  languages: ["Python", "C", "C++", "JavaScript", "HTML", "CSS"],
+  languages: ["Python", "C", "C++", "JavaScript"],
   aiMl: [
     "Machine Learning",
     "NLP",
@@ -95,22 +102,21 @@ export const skills = {
     "TensorFlow",
     "Keras",
     "Scikit-learn",
-    "TF-IDF",
-    "Logistic Regression",
   ],
-  dataViz: ["NumPy", "Pandas", "Matplotlib", "Data Preprocessing"],
-  webFrameworks: ["Flask", "Node.js", "React.js"],
-  databases: ["MySQL", "MongoDB", "Git", "VS Code", "OpenCV"],
+  dataViz: ["NumPy", "Pandas", "Matplotlib", "Data Preprocessing", "Model Evaluation"],
+  webFrameworks: ["Flask", "Node.js", "React.js (JSX)"],
+  databasesTools: ["MySQL", "MongoDB", "Git", "VS Code", "XAMPP", "OpenCV"],
   quantum: ["Qiskit", "PennyLane"],
 };
 
 export const education = {
   institution: "Shah and Anchor Kutchhi Engineering College",
-  degree: "B.Tech in Electronics and Computer Science Engineering",
-  year: "Third Year, Semester 6",
-  graduation: "2027",
-  duration: "Sept 2023 – Present",
   location: "Mumbai, Maharashtra",
+  degree: "B.Tech in Electronics and Computer Science Engineering",
+  cgpa: "8.4/10.0",
+  year: "Third Year, Semester 6",
+  graduation: "2027 (Expected)",
+  duration: "Sept 2023 – Present",
 };
 
 export const certifications = [
